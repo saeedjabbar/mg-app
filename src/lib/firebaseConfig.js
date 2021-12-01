@@ -2,8 +2,6 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
-import { seedDatabase } from '../seed';
-
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -14,16 +12,10 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID
 }
 
-console.log(process.env.REACT_APP_FIREBASE_API_KEY);
-
 firebase.initializeApp(firebaseConfig);
 firebase.firestore();
 
-console.log('firebase', firebase);
-console.log(firebaseConfig);
-
 
 const FieldValue = firebase.firestore.FieldValue;
-seedDatabase(firebase);
 
 export { firebase, FieldValue };
