@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import { firebase, FieldValue } from './lib/firebaseConfig';
 import FirebaseContext from './context/firebaseContext';
 
 ReactDOM.render(
   <FirebaseContext.Provider value={{ firebase, FieldValue }}>
-    <h1 className="text-red-500">Hello, World</h1>
+    <App />
   </FirebaseContext.Provider>,
   document.getElementById('root')
 
