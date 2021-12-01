@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { firebase, FieldValue } from './lib/firebase';
+import { firebase, FieldValue } from './lib/firebaseConfig';
 import FirebaseContext from './context/firebaseContext';
 
 ReactDOM.render(
