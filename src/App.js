@@ -20,6 +20,7 @@ export default function App() {
           <Route path={ROUTES.NOT_FOUND} component={NotFound} />
         </Switch>
       </Suspense>
+      <div className="border-2">hello</div>
     </Router>
   );
 }
